@@ -29,26 +29,26 @@ export default function Register() {
     <div style = {{height:"100vh"}}>
       <form className={classes.form} onSubmit={onSubmit}>
         
-	<h2>Inregistreaza un nou utilizator:</h2>
+	<h2>Register a new user:</h2>
 
           <label>
-            Adresa de mail:
+            Email address:
             <input type="text" name="email" onChange={e => setEmail(e.target.value)} />
           </label>
           <label>
-            Parola:
+            Password:
             <input type="password" name="password" onChange={e => setPassword(e.target.value)} />
           </label>
           <label>
-            Confirma Parola:
+            Confirm Password:
             <input type="password" name="confirmPassword" onChange={e => setconfirmPassword(e.target.value)}/>
           </label>
           <label>
-            Rol:
+            Role:
             <input type="text" name="email" onChange={e => setRole(e.target.value)}/>
           </label>
           <label>
-            Nume intreg:
+            Full Name:
             <input type="text" name="fullName" onChange={e => setFullName(e.target.value)}/>
 
           <input type="submit" value="Submit" />

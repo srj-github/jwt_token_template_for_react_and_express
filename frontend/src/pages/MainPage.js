@@ -22,7 +22,7 @@ function MainPage() {
         <li><Link to='/reset'>Reset Page</Link></li>
         <li><Link
               to={{pathname: '/login',
-                   state: {message: 'Te-ai delogat cu succes!'}
+                   state: {message: 'You successfully logged in!'}
                   }}
               onClick={() => {logoutUser();}}
             >

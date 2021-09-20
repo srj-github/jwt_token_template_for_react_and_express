@@ -36,17 +36,17 @@ function ResetPassword() {
   return (
     <div style = {{height:"100vh"}}>
       <form className={classes.form} onSubmit={onSubmit}>
-    	<h2>Reseteaza-ti Parola</h2>
+    	<h2>Reset your password:</h2>
           <label>
-            Parola curenta:
+            Current Password:
             <input type="password" name="email" onChange={e => setCurrentPassword(e.target.value)}/>
           </label>
           <label>
-            Noua Parola:
+            New Password:
             <input type="password" name="email" onChange={e => setNewPassword(e.target.value)}/>
           </label>
           <label>
-            Confirma Noua Parola
+            Confirm New Password
             <input type="password" name="email" onChange={e => setConfirmNewPassword(e.target.value)}/>
           </label>
           <input type="submit" value="Submit" />

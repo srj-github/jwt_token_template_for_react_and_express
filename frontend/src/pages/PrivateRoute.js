@@ -12,10 +12,10 @@ export default function PrivateRoute(props) {
       <Route {...rest} render={(props) => (<Component {...props} {...values}/>)}/>
     );
   } else {
-    console.log('Nu esti logat!');
+    console.log('You are not logged in!');
     return <Redirect to={{
       pathname: '/login',
-      state:{message: 'Trebuie intai sa te logezi!'}
+      state:{message: 'You must first login!'}
     }}/>;
   }
 

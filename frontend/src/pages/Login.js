@@ -26,13 +26,13 @@ function Login() {
     <div style = {{height:"100vh"}}>
       <form className={classes.form}
             onSubmit={onSubmit}>
-	<h2>Logheaza-te aici:</h2>
+	<h2>Login here:</h2>
           <label>
-            Adresa de mail:
+            Email Address:
             <input type="text" name="email" onChange={e => setEmail(e.target.value)}/>
           </label>
           <label>
-            Parola:
+            Password:
             <input type="password" name="password" onChange={e => setPassword(e.target.value)}/>
           </label>
           <input type="submit" value="Submit" />
