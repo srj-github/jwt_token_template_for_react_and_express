@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+form * {
+    margin:5px;
+}
+
+.rolSelect {
+    width: 150px;
+    margin-left:17px;
+}
