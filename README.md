@@ -29,6 +29,7 @@ You can use it to get started, and modify it as you want.
 1. Edit the .env file from the backend with your own passwords and details.
 
 2. To create the first user go to http://localhost:3000/register/
+   After the user is created, edit the file '/backend/src/controllers/authController.js and uncomment all lines from 32-72 to deny other user creatin without a valid jwt token.
 
 3. You can use the <PrivateRoute> component to restrict user access and allow only registered users to other components. 
 

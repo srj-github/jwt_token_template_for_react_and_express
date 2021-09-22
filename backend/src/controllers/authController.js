@@ -30,11 +30,11 @@ const createUserToken = async(user, code, req, res, message) => {
 
 // create new user
 exports.registerUser = async(req, res, next) => {
-  const token = req.cookies.jwt;
-  if (token) {
+//  const token = req.cookies.jwt;
+//  if (token) {
     try {
-      const decoded = jwt.verify(token, process.env.SECRET_KEY);
-      if (decoded) {
+//      const decoded = jwt.verify(token, process.env.SECRET_KEY);
+//      if (decoded) {
 	const {email, password, confirmPassword, role, fullName} = req.body;
 	const newUser = await UserModel.create({
 	  email,
@@ -44,7 +44,7 @@ exports.registerUser = async(req, res, next) => {
 	  fullName
 	});
 	createUserToken(newUser, 201, req, res, 'The user was created!');
-      }
+//      }
       return true;
     } catch(err) {
       console.log(err);
@@ -65,10 +65,10 @@ exports.registerUser = async(req, res, next) => {
       return false;
     }
 
- } else {
-   res.status(401).send({fail: 'You are not allowed!'});
-   return false;
- }
+ // } else {
+ //   res.status(401).send({fail: 'You are not allowed!'});
+ //   return false;
+ // }
 };
 
 exports.loginUser = async(req, res, next) => {
